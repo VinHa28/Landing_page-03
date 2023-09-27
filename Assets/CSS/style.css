@@ -1,0 +1,110 @@
+*  {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --primary-color: #143C3C;
+    --text-color-light-gray: #7D8188;
+    --primary-color-black: #152427;
+    --scondery-color-light-green: #E2EDDF;
+    --primary-color-black-green: #143C3C;
+    --text-color-black-gray: #575D5E;
+}
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+/* ===== Common ===== */
+a {
+    text-decoration: none;
+}
+.container {
+    width: 1140px;
+    max-width: calc(100% - 48px);
+    margin: 0 auto;
+}
+.heading {
+    font-size: 4.2rem;
+    font-weight: 600;
+    line-height: 1.24;
+    color: var(--primary-color-black);
+}
+.desc {
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1.625;
+}
+.btn {
+    display: inline-block   ;
+    border-radius: 999px;
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 500;
+    --height: 57px;
+    height: var(--height);
+    line-height: var(--height);
+    background-color: var(--primary-color-black-green);
+    min-width: 173px;
+    color: #fff;
+    transition: 0.2s;
+}
+.btn:hover {
+    color: var(--primary-color-black-green);
+    background-color: #fff;
+}
+/* =========== Header =========== */
+.header {
+    font-family: 'Public Sans', sans-serif;
+    position: sticky;
+    padding-top: 28px;
+    top: -15px;
+    z-index: 2;
+}
+.header__row {
+    display: flex;
+    margin-bottom: 13px;
+    align-items: center;
+}
+.header__logo {
+    margin-right: auto;
+}
+/* ===== Navigation ===== */
+.navbar__list {
+    display: flex;
+}
+.navbar__link {
+    padding: 16px 19px;
+    color: var(--text-color-black-gray);
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 1.556; 
+    transition: 0.2s;
+}
+.navbar__link--active, .navbar__link:hover {
+    color: var(--primary-color-black);
+    position: relative;
+}
+.navbar__link--active::after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 19px;
+    bottom: -16px;
+    width: 16px;
+    height: 2px;
+    background-color: var(--primary-color-black-green);
+}
+.sign-up-btn {
+    margin-left: 69px;
+}
+.header__line {
+    width: 1140px;
+    height: 1px;
+    background: linear-gradient(90deg, #FFF 0%, #DDDCDC 51.09%, rgba(212, 212, 212, 0.00) 99.68%);;
+}
