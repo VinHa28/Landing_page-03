@@ -727,3 +727,194 @@ a {
     line-height: 1.71429;
     margin-top: 12px;
 }
+
+/* ========== Blog & Articles ========== */
+.blog {
+    margin-top: 100px;
+    padding: 50px 0 52px;
+}
+.blog__section-heading {
+    display: flex;
+    align-items: center;
+    gap: 21px;
+}
+.blog__section-heading::before {
+    margin: 0;
+}
+.blog__row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.blog__heading{
+    width: 50%;
+    position: relative;
+}
+.blog__heading::after {
+    content: "";
+    display: block;
+    width: 82px;
+    height: 3px;
+    background-color: var(--primary-color-black);
+    position: absolute;
+    right: 0;
+    bottom: 22px;
+}
+.blog__desc {
+    color: var(--text-color-light-gray); 
+    width: 36%;
+}
+.blog__list {
+    margin-top: 90px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px 30px;
+}
+.blog-item {
+    border-radius: 40px 40px 0px 0px;
+    width: 360px;
+    padding-bottom: 12px;
+    transition: 0.2s;
+}
+.blog-item:hover {
+    border-radius: 40px;
+    background-color: #fff;
+    box-shadow: 0px 12px 74px 0px rgba(91, 91, 91, 0.25);
+}
+.blog-item__thumb {
+    width: 360px;
+    height: 317px;
+    object-fit: cover;
+    border-radius: 40px 40px 0px 0px;
+}
+.blog-item__info {
+    padding: 26px 14px 12px 0;
+    
+    transition: 0.2s;
+}
+.blog-item:hover .blog-item__info {
+    padding: 26px 33px 12px 30px;
+}
+
+.blog-item__link {
+    display: flex;
+    align-items: center;
+    width: 107px;
+    padding: 7px 33px;
+    border-radius: 20px;
+    color: #000;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.2;
+    background-color: var(--scondery-color-light-green);
+}
+.blog-item__link:hover {
+    background-color: var(--primary-color-black-green);
+    color: #fff;
+}
+.blog-item__desc {
+    margin-top: 13px;
+    color: var(--primary-color-black-green, #143C3C);
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1.667; 
+    height: 90px;
+    overflow: hidden;
+}
+.blog-item__date {
+    margin-top: 9px;
+    display: block;
+    text-align: right;
+    padding-top: 16px;
+    border-top: 1px solid #c4c4c4;
+}
+/* ========== Footer ========== */
+.footer {
+    margin-top: 50px;
+    padding: 72px 0 50px;
+    background-color: var(--primary-color-black-green);
+}
+.footer__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.footer__heading {
+    color: #fff;
+    font-size: 3.2rem;
+    font-weight: 500;
+}
+
+.footer__form {
+    display: flex;
+    justify-content: space-between;
+    width: 354px;
+    margin-top: 25px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid var(--scondery-color-gray);
+}
+.footer__input {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: #fff ;
+    font-size: 2.2rem;
+    font-weight: 600;
+}
+.footer__input::placeholder {
+    color: var(--scondery-color-gray);
+    font-size: 2.2rem;
+    font-weight: 600;
+}
+.footer__submit {
+    color: #C4C4C4;
+}
+.footer__submit:hover {
+    color: #A75325;
+}
+.footer__social {
+    margin-top: 47px;
+    display: flex;
+    gap: 22px;
+}
+.footer__social-link {
+    width: 52px;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #265252;
+    border-radius: 50%;
+    color: #FFF;
+}
+.footer__social-link:hover {
+    background-color: #A75325;
+}
+.footer__information {
+    font-family: 'Public Sans', sans-serif;
+}
+.footer__list {
+    float: right;
+    display: flex;
+    gap: 50px;
+}
+.footer__column-title {
+    color:  #FFF;
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 1.556; 
+    margin-bottom: 6px;
+}
+.footer__link {
+    display: block;
+    color: var(--scondery-color-gray);
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 2.25; 
+}
+.footer__dash {
+    margin-top: 45px;
+    width: 1140px;
+    height: 1px;
+    background: linear-gradient(90deg, #143C3C 2.28%, #295A5A 55.65%, rgba(38, 82, 82, 0.00) 102.06%);
+}
